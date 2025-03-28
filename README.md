@@ -1,13 +1,29 @@
-# Logictable
-It is a logic system based on discrete mathematic and digital systems
-The logics used are mentioned below 
+import java.util.Scanner;
+public class discrete{
+    public static void main(String[] args ){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your first choice = ");
+        boolean a = sc.nextBoolean();
+        System.out.println("Enter your second choice = ");
+        boolean b  = sc.nextBoolean();
+        if (a == true && b == true ){
+            System.out.print("true");
+        
+        }
+        else if (a == false && b == true || a == true && b == false ){
+            System.out.print("false");
+        }
+        else{
+            System.out.print("false ");
+        }
 
-Logical operators AND, OR, NOT are used in condition checking. Like a AND b checks if both a and b are true. a OR b checks if either of a or b is true. !a complements the boolean value of a.
-
-In this question you basically need to do
-a && b
-a || b
-
-Input: a = false, b = true
-Output: false true true
-Explanation: false AND true gives false. false OR true gives true. NOT false give true.
+        if(a == false && b== false){
+        System.out.println("false ");
+        }
+        else{
+            System.out.print(" true ");
+        }
+        System.out.println(!a);
+}
+}
+ 
